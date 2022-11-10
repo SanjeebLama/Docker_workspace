@@ -1,6 +1,8 @@
 # Parent Image
 FROM node:17-alpine
 
+RUN npm install -g nodemon 
+
 WORKDIR /DockerApp
 
 COPY package.json .
@@ -13,4 +15,4 @@ COPY . .
 
 EXPOSE 4000
 
-CMD ["node", "app.js"] 
+CMD ["npm", "run", "dev"] 
