@@ -6,7 +6,7 @@ WORKDIR /DockerApp
 # first . is for current directory and second . is for destination directory
 COPY . .
 
-# Install dependencies in build time
+# Install dependencies in build time 
 RUN npm install
 
 EXPOSE 4000
