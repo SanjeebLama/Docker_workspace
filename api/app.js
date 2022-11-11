@@ -8,7 +8,7 @@ app.use(cors())
 app.get('/', (req, res) => {
   res.json([
     {
-      "id":"Rule 101",
+      "id":" 101",
       "title":"Here and Now; Breathe and Relax"
     },
     {
@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     },
     {
       "id":"3",
-      "title":"Show Review: Alice in Borderland"
+      "title":"docker-compose up: is mind blowing"
     }
   ])
 })
