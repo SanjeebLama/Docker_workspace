@@ -8,4 +8,15 @@ services:
     volumes:
       - ./api:/DockerApp
       - ./DockerApp/node_modules
-
+  front-end:
+    build:
+      context: ./front-end
+      dockerfile: Dockerfile
+    container_name: front-end_container
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./front-end:/app
+      - ./app/node_modules
+    stdin_open: true # for debugging and interactivity
+    tty: true # for debugging
