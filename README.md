@@ -1,35 +1,35 @@
 # Docker 🐳
-It basically solves the problem of “It works on my machine”
+It basically solves the problem of **“But, it works on my machine.... 🤷‍♂️”**
 
 
 ## Docker Images:
-It’s a blueprint for the docker containers.
-
-It consist the information about the runtime environment, application code, any dependencies, extra configuration, commands, etc.
+- It’s a blueprint for the docker containers.
+- It consist the information about the runtime environment, application code, any dependencies, extra configuration, commands, etc.
 
 ## Docker Container:
-Docker container is a process, and it runs the outline as per the docker image 
-(with exact runtime environment, dependencies, etc. )
-Containers are also known as isolated process.
-Eg: if node 10 is installed in our machine, but docker image has node 16 requirement then it doesn’t matter, the container runs regardless of the requirement for node 16 because node 16 will be present in the container.
+- Docker container is a process, and it runs the outline as per the docker image 
+(with exact runtime environment, dependencies, etc.)
+- Containers are also known as isolated process.
+- Eg: if node 10 is installed in our machine, but docker image has node 16 requirement then it doesn’t matter, the container runs regardless of the requirement for node 16 because node 16 will be present in the container.
 
 
 
 ## Docker Image: Parent Images
-Images are made up of different Layers.
-Parent Image:
-Includes the OS & sometimes the run time environment eg: node, python, ruby, etc.
+- Images are made up of different Layers.
+- Parent Image:
+	- Includes the OS & sometimes the run time environment eg: node, python, ruby, etc.
 
 
 ## How to create our own docker image?
-We need to create a docker file. It consists of all the instructions required to create a docker image like which runtime, command and dependencies to use.
+- We need to create a docker file. 
+- It consists of all the instructions required to create a docker image like which runtime, command and dependencies to use.
 
-## Command line 🧑‍💻
-docker build -t myapp .
-Docker image is created under the name myapp.
+## Create image 🧑‍💻
+Docker image is created under the name **myapp**.
 
-https://docs.docker.com/get-started/docker_cheatsheet.pdf
-
+```sh 
+docker build -t myapp . 
+```
 
 
 ## Few helpful commands:
@@ -116,3 +116,8 @@ docker compose down
 -v to remove volumes as well 
 docker-compose down —-rmi all -v
 ```
+
+
+## Docker Cheatsheet
+https://docs.docker.com/get-started/docker_cheatsheet.pdf
+
